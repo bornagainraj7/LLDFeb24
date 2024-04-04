@@ -13,5 +13,6 @@ public class Client {
 
         // Student s = new Student();
         System.out.println(student.toString());
+        System.out.println(student);
     }
 }
