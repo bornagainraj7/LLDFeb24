@@ -1,2 +1,2 @@
-package org.example.generic;public class CAt {
+package org.example.generic;public class Cat {
 }

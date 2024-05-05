@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         Lock lock = new ReentrantLock();
         Count count = new Count();
+
         Adder adder = new Adder(count, lock);
         Subtractor subtractor = new Subtractor(count, lock);
 

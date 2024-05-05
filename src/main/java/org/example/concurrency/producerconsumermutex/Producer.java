@@ -18,7 +18,7 @@ public class Producer implements Runnable {
         while(true) {
             synchronized(store) {
                 if (store.size() < maxSize) {
-                    System.out.println("Producer: " + this.name + " is producing, store size: "+ store.size());
+                    System.out.println("Producer: " + this.name + " is producing, store size: "+ (store.size() + 1));
                     store.add(new Object());
                 }
             }

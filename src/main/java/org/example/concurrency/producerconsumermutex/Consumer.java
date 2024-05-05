@@ -19,7 +19,7 @@ public class Consumer implements Runnable {
         while(true) {
             synchronized(store) {
                 if (store.size() > 0) {
-                    System.out.println("Consumer: " + this.name + " is consuming, store size: "+ store.size());
+                    System.out.println("Consumer: " + this.name + " is consuming, store size: "+ (store.size() - 1));
                     store.remove();
                 }
             }

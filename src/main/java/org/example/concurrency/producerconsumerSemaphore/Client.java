@@ -50,9 +50,9 @@ public class Client {
         t7.start();
         Thread t8 = new Thread(c3);
         t8.start();
-        Thread t9 = new Thread(c2);
+        Thread t9 = new Thread(c4);
         t9.start();
-        Thread t10 = new Thread(c3);
+        Thread t10 = new Thread(c5);
         t10.start();
     }
 }
